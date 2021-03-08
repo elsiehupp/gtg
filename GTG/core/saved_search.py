@@ -106,7 +106,7 @@ class SavedSearchStore:
 
         for search in self.data:
             for child in search.children:
-                parent_map[child.sid] = search.sid
+                parent_map[child.id] = search.id
 
         for search in self.lookup.values():
             element = SubElement(root, self.XML_TAG)
